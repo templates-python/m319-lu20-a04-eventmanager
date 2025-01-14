@@ -1,5 +1,5 @@
 import pytest
-from datetime import datetime
+from datetime import datetime, timedelta
 from event import Event
 
 def test_event_creation():
@@ -15,12 +15,12 @@ def test_event_duration_days():
     start = datetime(2023, 1, 1, 0, 0, 0)
     end = datetime(2023, 1, 3, 0, 0, 0)
     event = Event("Multi-day Event", start, end)
-    # Dauer sollte 2 Tage sein
-    assert event.duration == 2
+    # Erwartete Differenz: 2 volle Tage
+    assert event.duration == timedelta(days=2)
 
 def test_event_duration_hours():
     start = datetime(2023, 1, 1, 10, 0, 0)
     end = datetime(2023, 1, 1, 18, 0, 0)
     event = Event("Single-day Event", start, end)
-    # Dauer könnte z.B. als 8 Stunden interpretiert werden
-    assert event.duration == 8
+    # Erwartete Differenz: 8 Stunden
+    assert event.duration == timedelta(hours=8)
