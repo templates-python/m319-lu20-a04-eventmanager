@@ -1,5 +1,10 @@
-from datetime import datetime
-from event import Event
+def read_date():
+    """
+    Liest ein Datum im Format "dd.mm.yyyy hh:mm" ein.
+    Bei falschem Format wird eine Fehlermeldung ausgegeben
+    und erneut abgefragt.
+    """
+    pass
 
 def create_event():
     """
@@ -8,18 +13,20 @@ def create_event():
     """
     pass
 
-def show_events(events):
+
+def show_events():
     """
-    Gibt alle Event-Daten (Titel, Start, End, Dauer) im Terminal aus.
+    Gibt alle Event-Daten (Titel, Start, End, Duration als timedelta) im Terminal aus.
     """
     pass
+
 
 def main():
     """
-    Handelt den Userdialog und speichert die Liste mit Events
+    Führt den Userdialog
     """
     pass
 
 
-if __name__ == main():
+if __name__ == '__main__':
     main()
