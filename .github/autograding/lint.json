@@ -1,5 +1,8 @@
 {
-  "files": ["main.py"],
-  "ignore" : [],
-  "max": 20
+  "files": [
+    "event.py",
+    "management.py"
+  ],
+  "ignore": [],
+  "max": 5
 }
