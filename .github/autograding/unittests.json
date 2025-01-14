@@ -1,7 +1,49 @@
 [
   {
-    "name": "test",
-    "function": "test",
+    "name": "test_read_date_valid",
+    "function": "test_read_date_valid",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_date_invalid",
+    "function": "test_read_date_invalid",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_create_event",
+    "function": "test_create_event",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_show_events",
+    "function": "test_show_events",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_main_exit",
+    "function": "test_main_exit",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_event_creation",
+    "function": "test_event_creation",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_event_duration_days",
+    "function": "test_event_duration_days",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_event_duration_hours",
+    "function": "test_event_duration_hours",
     "timeout": 10,
     "points": 1
   }
